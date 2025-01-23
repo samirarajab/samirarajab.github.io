@@ -582,7 +582,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
-		color: #98c593;
+		color: #98b6c5;
 	}
 
 	sub {
@@ -656,7 +656,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: #98c593;
+		background-color: #98b6c5;
 		border: 0;
 		border-radius: 3.5em;
 		color: #ffffff;
@@ -713,7 +713,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		.button:hover,
 		button:hover {
-			background-color: #a8cea4;
+			background-color: #a4c4ce;
 		}
 
 		input[type="button"]:active,
@@ -721,7 +721,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		.button:active,
 		button:active {
-			background-color: #88bc82;
+			background-color: #88a8bc;
 		}
 
 		input[type="button"].style2,
@@ -1826,7 +1826,7 @@ input, select, textarea {
 		left: 0;
 		top: 0;
 		width: 100%;
-		background: rgba(255, 255, 255, 0.95);
+		background: rgba(255, 255, 255, 0.9);
 		height: 3em;
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
@@ -2057,11 +2057,11 @@ input, select, textarea {
 			}
 
 				.main.dark .button.style2:hover {
-					background-color: rgba(255, 255, 255, 0.125);
+					background-color: rgba(255, 255, 255, 0.2);
 				}
 
 				.main.dark .button.style2:active {
-					background-color: rgba(255, 255, 255, 0.25);
+					background-color: rgba(255, 255, 255, 0.4);
 				}
 
 				.main.dark .button.style2.down {
@@ -2313,3 +2313,40 @@ input, select, textarea {
 			}
 
 		}
+
+/* Work */ 
+
+	#work {
+		position: relative;
+		background: url('images/wallpaper.png') no-repeat center center / cover;
+		/* Sobreposição translúcida */
+		background-color: rgba(0, 0, 0, 0.5); /* Cor preta translúcida */
+		background-blend-mode: overlay;
+		color: #ffffff; /* Deixe o texto branco para contraste */
+		padding: 5em 2em;
+	}
+
+	/* Ajuste da galeria e conteúdo interno */
+	#work .content {
+		position: relative;
+		z-index: 2;
+	}
+
+	/* Sobreposição para garantir contraste */
+	#work::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(255, 255, 255, 0.2); /* Efeito translúcido */
+		z-index: 1;
+	}
+
+	/* Ajuste para dispositivos móveis */
+	@media screen and (max-width: 768px) {
+		#work {
+			padding: 3em 1em;
+		}
+	}
