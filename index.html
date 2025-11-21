@@ -175,78 +175,50 @@
 						<br>Cuidar das suas finanças, é cuidar de você!</p>
 							<ul class="actions special">
 								<li>
-									<a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2VnyrLUQKoY-F2z242y5WxnGo6gdF7kcbEw2cLDSK1VkvuA6dyGBYsX9jZr5CoZ2VUDzFiP7YL" class="icon schedule"><input type="button" value="Agendamento" /></a>
-								</li>
-								<!-- Botão da Calculadora -->
-								<li>
-								  <a href="#" class="icon calculator">
-									<input type="button" value="Calculadora" id="openCalculator" />
-								  </a>
+									<a id="btn-agendamento"
+									href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2VnyrLUQKoY-F2z242y5WxnGo6gdF7kcbEw2cLDSK1VkvuA6dyGBYsX9jZr5CoZ2VUDzFiP7YL"
+									class="icon schedule"
+									target="_blank">
+									<input type="button" value="Agendamento" />
+									</a>
 								</li>
 								<li>	
-									<a href="https://wa.me/5527992327393" class="icon whatsapp"><input type="button" value="Contato" /></a>
+									<a href="https://wa.me/5527992327393" class="icon whatsapp" target="_blank"><input type="button" value="Contato" /></a>
 								</li>
 							</ul>
 						</div>
 					</header>
 				</div>
 			</section>
-
-		<!-- Popup da Calculadora de Investimentos -->
-		<div id="calculatorPopup" class="popup-overlay">
+			
+		<!-- Popup de agenda temporariamente indisponível -->
+		<div id="agendaPopup" class="popup-overlay">
 			<div class="popup-content">
-			  <span class="close">&times;</span>
-			  <!--td><span class="currency">R$</span>${bruto}</td-->
-			  <h2>Calculadora de Investimentos</h2>
-			  <div class="form">
-				<label>
-				  Valor Inicial
-				  <input type="text" id="initialAmount" placeholder="0,00" />
-				</label>
-				<label>
-				  Aporte Mensal
-				  <input type="text" id="monthlyContribution" placeholder="0,00" />
-				</label>
-				<label>
-				  Período (em meses)
-				  <input type="number" id="period" value="12" />
-				</label>
-				<label>
-				  % do CDI (aplicável apenas em CDB e LCI/LCA)
-				  <input type="number" id="percentCDI" value="100" />
-				</label>
-			  </div>
-			  <table>
-				<thead>
-				  <tr>
-					<th>Produto</th>
-					<th>Total Bruto</th>
-					<th>Total Líquido</th>
-					<th>Ganho</th>
-					<th>%Lucro</th>
-					<th>Rendimento</th>
-				  </tr>
-				</thead>
-				<tbody id="resultBody"></tbody>
-			  </table>
+				<span class="close">&times;</span>
+				<p> No momento, minha agenda de atendimentos está temporariamente fechada. 
+					Caso tenha interesse em começar sua organização financeira ou planejar seus próximos passos, 
+					você pode entrar na <strong>lista de espera</strong> comigo pelo WhatsApp.
+				</p>
+				<p>Assim que novas vagas forem abertas, entrarei em contato.</p>
+				<p>Agradeço sua compreensão, e nos vemos em breve!</p>
 			</div>
-		  </div>
+		</div>
 
 		<!-- Footer -->
 			<footer id="footer">
 
 				<!-- Icons -->
 					<ul class="icons">
-						<li><a href="https://br.linkedin.com/in/samirarsantos" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://www.instagram.com/samirarajabs/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://www.tiktok.com/@_samirajab" class="icon brands fa-tiktok"><span class="label">Tiktok</span></a></li>
-						<li><a href="https://www.facebook.com/profile.php?id=100010787673448" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="https://twitter.com/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://br.linkedin.com/in/samirarsantos" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.instagram.com/samirarajabs/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.tiktok.com/@_samirajab" class="icon brands fa-tiktok" target="_blank"><span class="label">Tiktok</span></a></li>
+						<li><a href="https://www.facebook.com/profile.php?id=100010787673448" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+						<li><a href="https://twitter.com/" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
 					</ul>
 
 				<!-- Menu -->
 					<ul class="menu">
-						<li>&copy; 2024 - Todos direitos reservados - Samira Rajab&nbsp;&nbsp;</li><li>Developed by <a href="https://www.linkedin.com/in/costajao/">João Victor Costa</a></li>
+						<li>&copy; 2024 - Todos direitos reservados - Samira Rajab&nbsp;&nbsp;</li><li>Developed by <a href="https://www.linkedin.com/in/costajao/" target="_blank">João Victor Costa</a></li>
 					</ul>
 
 			</footer>
@@ -264,6 +236,7 @@
 			<script src="assets/js/calendar.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/message.js"></script>
 			<script src="assets/js/calculator.js"></script>
 
 	</body>

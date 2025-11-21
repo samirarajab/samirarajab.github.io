@@ -1,0 +1,64 @@
+/* Remover reset global */
+/* Se você já usa esse trecho na calculadora.js, não precisa duplicar */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo apenas dentro do popup de mensagem */
+#agendaPopup .popup-content {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+/* Overlay genérico de popup (mesma base da calculadora) */
+.popup-overlay {
+  display: none;                /* escondido por padrão */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Conteúdo central do popup de mensagem */
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 480px;             /* menor que a calculadora */
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Botão de fechar (X) */
+.popup-content .close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Títulos dentro do popup de mensagem */
+#agendaPopup h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Texto interno do popup */
+#agendaPopup p {
+  margin-bottom: 0.75rem;
+}
+
+/* Estilo visual opcional para deixar o botão Agendamento com cara de desativado */
+a#btn-agendamento.disabled input[type="button"] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
