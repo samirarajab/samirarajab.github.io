@@ -1,0 +1,104 @@
+/* Remover reset global */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo apenas dentro do popup */
+.popup-content {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+
+button#openCalculator {
+  margin: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form label {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+thead th {
+  text-align: left;
+  padding: 0.75rem;
+  background-color: #f3f4f6;
+  border-bottom: 2px solid #ccc;
+}
+
+tbody td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+.currency {
+  font-size: 0.7em;
+  vertical-align: super;
+  margin-right: 2px;
+}

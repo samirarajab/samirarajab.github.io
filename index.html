@@ -9,9 +9,12 @@
 		<!-- Styles -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/widget.css">
+		<link rel="stylesheet" href="assets/css/calculator.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 		<!-- Scripts -->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://unpkg.com/imask"></script>
+			
 	</head>
 	<body class="is-preload">
 
@@ -174,6 +177,12 @@
 								<li>
 									<a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2VnyrLUQKoY-F2z242y5WxnGo6gdF7kcbEw2cLDSK1VkvuA6dyGBYsX9jZr5CoZ2VUDzFiP7YL" class="icon schedule"><input type="button" value="Agendamento" /></a>
 								</li>
+								<!-- Botão da Calculadora -->
+								<li>
+								  <a href="#" class="icon calculator">
+									<input type="button" value="Calculadora" id="openCalculator" />
+								  </a>
+								</li>
 								<li>	
 									<a href="https://wa.me/5527992327393" class="icon whatsapp"><input type="button" value="Contato" /></a>
 								</li>
@@ -182,6 +191,46 @@
 					</header>
 				</div>
 			</section>
+
+		<!-- Popup da Calculadora de Investimentos -->
+		<div id="calculatorPopup" class="popup-overlay">
+			<div class="popup-content">
+			  <span class="close">&times;</span>
+			  <!--td><span class="currency">R$</span>${bruto}</td-->
+			  <h2>Calculadora de Investimentos</h2>
+			  <div class="form">
+				<label>
+				  Valor Inicial
+				  <input type="text" id="initialAmount" placeholder="0,00" />
+				</label>
+				<label>
+				  Aporte Mensal
+				  <input type="text" id="monthlyContribution" placeholder="0,00" />
+				</label>
+				<label>
+				  Período (em meses)
+				  <input type="number" id="period" value="12" />
+				</label>
+				<label>
+				  % do CDI (aplicável apenas em CDB e LCI/LCA)
+				  <input type="number" id="percentCDI" value="100" />
+				</label>
+			  </div>
+			  <table>
+				<thead>
+				  <tr>
+					<th>Produto</th>
+					<th>Total Bruto</th>
+					<th>Total Líquido</th>
+					<th>Ganho</th>
+					<th>%Lucro</th>
+					<th>Rendimento</th>
+				  </tr>
+				</thead>
+				<tbody id="resultBody"></tbody>
+			  </table>
+			</div>
+		  </div>
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -215,6 +264,7 @@
 			<script src="assets/js/calendar.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/calculator.js"></script>
 
 	</body>
 </html>
