@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 3px;
   bottom: -27px;
   left: 0;
-  background-color: rgba(230, 226, 215, 0.5);
+  background-color: rgba(210, 199, 166, 0.5);
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -208,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-header #navbar li.call-to-action a {
   padding: 5px 10px 3px 10px;
   margin: 12px 0 0 0px;
-  color: #E6E2D7;
+  color: #D2C7A6;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header #navbar li.call-to-action a:hover {
   background-color: #C94814;
-  color: #E6E2D7;
+  color: #D2C7A6;
 }
 #fh5co-header #navbar li.call-to-action a span:before {
   background-color: transparent;
@@ -227,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header #navbar li.call-to-action a.sign-up:hover {
   background: #94A5B5;
-  color: #E6E2D7;
+  color: #D2C7A6;
 }
 #fh5co-header #navbar li.call-to-action a.log-in {
   border: 2px solid #C94814;
@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header #navbar li.call-to-action a.log-in:hover {
   background: #C94814;
-  color: #E6E2D7;
+  color: #D2C7A6;
 }
 #fh5co-header .navbar-brand {
   float: left;
@@ -255,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header.navbar-fixed-top {
   position: fixed !important;
-  background: #E6E2D7;
+  background: #D2C7A6;
   -webkit-box-shadow: 0 0 9px 0 rgba(36, 36, 36, 0.1);
   -moz-box-shadow: 0 0 9px 0 rgba(36, 36, 36, 0.1);
   -ms-box-shadow: 0 0 9px 0 rgba(36, 36, 36, 0.1);
@@ -299,7 +299,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #C94814;
   padding: 5px 10px 3px 10px;
   margin: 12px 0 0 0px;
-  color: #E6E2D7;
+  color: #D2C7A6;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
@@ -307,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header.navbar-fixed-top #navbar li.call-to-action a:hover {
   background-color: #C94814;
-  color: #E6E2D7 !important;
+  color: #D2C7A6 !important;
 }
 #fh5co-header.navbar-fixed-top #navbar li.call-to-action a span:before {
   background-color: transparent;
@@ -318,7 +318,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header.navbar-fixed-top #navbar li.call-to-action a.sign-up:hover {
   background: #94A5B5;
-  color: #E6E2D7;
+  color: #D2C7A6;
 }
 #fh5co-header.navbar-fixed-top #navbar li.call-to-action a.log-in {
   border: 2px solid #C94814;
@@ -326,11 +326,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header.navbar-fixed-top #navbar li.call-to-action a.log-in:hover {
   background: #C94814;
-  color: #E6E2D7;
+  color: #D2C7A6;
 }
 #fh5co-header .navbar-default {
   border: transparent;
-  background: #E6E2D7;
+  background: #D2C7A6;
   margin: 0;
   padding: 10px 70px;
   -webkit-border-radius: 0px;
@@ -352,7 +352,7 @@ h1, h2, h3, h4, h5, h6 {
   background-attachment: fixed;
   position: relative;
   width: 100%;
-  background-color: #D2C7A6;
+  background-color: #E6E2D7;
   color: #E6E2D7;
 }
 #fh5co-home a {
@@ -467,13 +467,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
   }
 }
-#fh5co-home .text-inner .call-to-action a.download {
-  border: 2px solid #94A5B5;
-  background: #94A5B5;
+#fh5co-home .text-inner .call-to-action a.whatsapp {
+  border: 2px solid #3EC483;
+  background: #3EC483;
   text-decoration: none !important;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-home .text-inner .call-to-action a.download {
+  #fh5co-home .text-inner .call-to-action a.whatsapp {
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -746,7 +746,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100px;
   height: 100px;
   margin: 1.15em auto 1em;
-  background: #C94814;
+  background: #94A5B5;
   color: rgba(230, 226, 215, 0.8);
   -webkit-transition: color 0.3s, background 0.3s;
   transition: color 0.3s, background 0.3s;
@@ -758,7 +758,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .pricing__item:hover .pricing__price {
   color: #E6E2D7;
-  background: #C94814;
+  background: #94A5B5;
 }
 
 .pricing__feature-list {
@@ -813,7 +813,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 130px;
   display: inline-block;
   position: relative;
-  background: #C94814;
+  background: #94A5B5;
   display: table;
   margin: 0 auto;
   -webkit-border-radius: 50%;
