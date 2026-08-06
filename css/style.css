@@ -6,19 +6,10 @@
   font-style: normal;
 }
 
-/*@font-face {
-  font-family: 'satoshi';
-  src: url("../fonts/satoshi/Satoshi-Regular.otf");
-  src: url("../fonts/satoshi/Satoshi-Regular.otf") format("embedded-opentype"), url("../fonts/satoshi/Satoshi-Regular.ttf") format("truetype"), url("../fonts/satoshi/Satoshi-Regular.ttf") format("woff"), url("../fonts/satoshi/Satoshi-Regular.ttf") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}*/
-
 body {
-  /*font-family: "Roboto Mono", monospace;*/
-  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 1.8;
   color: #97603F;
   height: 100%;
@@ -65,16 +56,15 @@ a:hover, a:active, a:focus {
 }
 
 p {
-  font-family: inherit;
   margin-bottom: 1.5em;
   font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #242424;
-  /*font-family: "Roboto Mono", monospace;*/
-  font-family: Georgia, serif;
-  font-weight: 400;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   margin: 0 0 30px 0;
 }
 
@@ -110,8 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 #fh5co-header #navbar li a {
-  /*font-family: "Roboto Mono", monospace;*/
-  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   color: rgba(36, 36, 36, 0.6);
   position: relative;
   font-size: 16px;
@@ -857,8 +846,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   display: block;
   color: rgba(36, 36, 36, 0.7);
-  /*font-family: "Roboto Mono", monospace;*/
-  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   width: 100%;
   font-weight: 700;
   margin-bottom: .3em;
@@ -1123,10 +1111,9 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  /*font-family: "Roboto Mono", monospace;*/
-  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
   font-size: 16px;
-  font-weight: 400;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
