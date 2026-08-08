@@ -701,7 +701,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1.5em 0;
   padding: 3em 2em 2em 2em;
   cursor: default;
-  background: #E6E2D7;
+  background: #D2C7A6;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(36, 36, 36, 0.06);
   -moz-box-shadow: 0px 2px 5px 0px rgba(36, 36, 36, 0.06);
   box-shadow: 0px 2px 5px 0px rgba(36, 36, 36, 0.06);
@@ -714,8 +714,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 .pricing__item:hover {
-  color: #333;
-  background: rgba(148, 165, 181, 0.4);
+  color: #242424;
+  background: rgba(151, 96, 63, 0.4);
   webkit-box-shadow: 0px 8px 16px -4px rgba(36, 36, 36, 0.13);
   -moz-box-shadow: 0px 8px 16px -4px rgba(36, 36, 36, 0.13);
   box-shadow: 0px 8px 16px -4px rgba(36, 36, 36, 0.13);
@@ -746,8 +746,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: 1.5em auto 1em;
     padding: 10px 18px;
 
-    background: #94A5B5;
-    color: #fff;
+    background: #97603F;
+    color: #E6E2D7;
 
     border-radius: 30px;
 
@@ -756,7 +756,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .pricing__item:hover .pricing__price {
   color: #E6E2D7;
-  background: #94A5B5;
+  background: #97603F;
 }
 
 .pricing__feature-list {
@@ -778,7 +778,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.75em 2em;
   opacity: 0;
   color: #E6E2D7;
-  background: #94A5B5;
+  background: #97603F;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
   -webkit-transform: translate3d(0, -15px, 0);
@@ -793,7 +793,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .pricing__action:hover,
 .pricing__action:focus {
-  background: #94A5B5;
+  background: #C94814;
 }
 
 .fh5co-services {
