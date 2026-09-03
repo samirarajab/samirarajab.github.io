@@ -544,7 +544,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   background: rgba(230, 225, 215, 0.95);
-  opacity: 0;
+  opacity: 0.2;
   padding: 30px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
