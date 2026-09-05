@@ -341,7 +341,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-home {
   background-color: transparent;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   position: relative;
   width: 100%;
   background-color: #e6e6e6;
@@ -500,6 +500,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .fh5co-explore {
   padding-bottom: 40px;
+}
+
+.fh5co-explore-image {
+    height: 700px;
+    background-image: url('../images/me.jpg');
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .fh5co-explore-image {
+        height: 400px;
+        background-position: center 30%;
+    }
 }
 
 .fh5co-portfolio {
