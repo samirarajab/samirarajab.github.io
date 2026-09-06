@@ -504,7 +504,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .fh5co-explore-image {
     height: 700px;
-    background-image: url('../images/me.jpg');
+    background-image: url('../images/me.png');
     background-size: cover;
     background-position: center 20%;
     background-repeat: no-repeat;
@@ -531,7 +531,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 2px 5px 0px rgba(36, 36, 36, 0.06);
 }
 .fh5co-portfolio > a:hover {
-  webkit-box-shadow: 0px 8px 16px -4px rgba(36, 36, 36, 0.13);
+  -webkit-box-shadow: 0px 8px 16px -4px rgba(36, 36, 36, 0.13);
   -moz-box-shadow: 0px 8px 16px -4px rgba(36, 36, 36, 0.13);
   box-shadow: 0px 8px 16px -4px rgba(36, 36, 36, 0.13);
 }
@@ -731,7 +731,7 @@ h1, h2, h3, h4, h5, h6 {
 .pricing__item:hover {
   color: #242424;
   background: rgba(201, 72, 20, 0.4);
-  webkit-box-shadow: 0px 8px 16px -4px rgba(36, 36, 36, 0.13);
+  -webkit-box-shadow: 0px 8px 16px -4px rgba(36, 36, 36, 0.13);
   -moz-box-shadow: 0px 8px 16px -4px rgba(36, 36, 36, 0.13);
   box-shadow: 0px 8px 16px -4px rgba(36, 36, 36, 0.13);
 }
@@ -801,14 +801,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pricing__item:hover .pricing__action {
-  opacity: 1;
+  opacity: 0.9;
   -webkit-transform: translate3d(36, 36, 36);
   transform: translate3d(36, 36, 36);
 }
 
 .pricing__action:hover,
 .pricing__action:focus {
-  background: #2D5A27;
+  background: #242424;
 }
 
 .fh5co-services {
@@ -1387,8 +1387,6 @@ h1, h2, h3, h4, h5, h6 {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
-  /* ideally, transition speed should match zoom duration */
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -1462,5 +1460,3 @@ h1, h2, h3, h4, h5, h6 {
 .js .animate-box {
   opacity: 0;
 }
-
-/*# sourceMappingURL=style.css.map */
