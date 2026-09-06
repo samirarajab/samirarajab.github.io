@@ -1020,33 +1020,33 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-footer .social-media li a i {
   font-size: 22px;
 }
-#fh5co-footer .contact-form .form-group input[type="name"],
+#fh5co-footer .contact-form .form-group input[type="tel"],
 #fh5co-footer .contact-form .form-group input[type="text"],
 #fh5co-footer .contact-form .form-group input[type="email"],
 #fh5co-footer .contact-form .form-group textarea {
   font-size: 16px;
 }
-#fh5co-footer .contact-form .form-group input[type="name"]::-webkit-input-placeholder,
+#fh5co-footer .contact-form .form-group input[type="tel"]::-webkit-input-placeholder,
 #fh5co-footer .contact-form .form-group input[type="text"]::-webkit-input-placeholder,
 #fh5co-footer .contact-form .form-group input[type="email"]::-webkit-input-placeholder,
 #fh5co-footer .contact-form .form-group textarea::-webkit-input-placeholder {
   color: rgba(230, 225, 215, 0.5);
 }
-#fh5co-footer .contact-form .form-group input[type="name"]:-moz-placeholder,
+#fh5co-footer .contact-form .form-group input[type="tel"]:-moz-placeholder,
 #fh5co-footer .contact-form .form-group input[type="text"]:-moz-placeholder,
 #fh5co-footer .contact-form .form-group input[type="email"]:-moz-placeholder,
 #fh5co-footer .contact-form .form-group textarea:-moz-placeholder {
   /* Firefox 18- */
   color: rgba(230, 225, 215, 0.5);
 }
-#fh5co-footer .contact-form .form-group input[type="name"]::-moz-placeholder,
+#fh5co-footer .contact-form .form-group input[type="tel"]::-moz-placeholder,
 #fh5co-footer .contact-form .form-group input[type="text"]::-moz-placeholder,
 #fh5co-footer .contact-form .form-group input[type="email"]::-moz-placeholder,
 #fh5co-footer .contact-form .form-group textarea::-moz-placeholder {
   /* Firefox 19+ */
   color: rgba(230, 225, 215, 0.5);
 }
-#fh5co-footer .contact-form .form-group input[type="name"]:-ms-input-placeholder,
+#fh5co-footer .contact-form .form-group input[type="tel"]:-ms-input-placeholder,
 #fh5co-footer .contact-form .form-group input[type="text"]:-ms-input-placeholder,
 #fh5co-footer .contact-form .form-group input[type="email"]:-ms-input-placeholder,
 #fh5co-footer .contact-form .form-group textarea:-ms-input-placeholder {
@@ -1069,6 +1069,18 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-footer #btn-submit {
   color: rgba(230, 225, 215, 0.9) !important;
   background: #97603F !important;
+}
+#fh5co-footer .form-status {
+  margin-bottom: 15px;
+  min-height: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+#fh5co-footer .form-status.error {
+  color: #d98b7a;
+}
+#fh5co-footer .form-status.success {
+  color: #8fbf9f;
 }
 
 .fh5co-nav-toggle {

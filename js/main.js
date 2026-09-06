@@ -186,6 +186,231 @@
 		counterWayPoint();
 		contentWayPoint();
 
+		// EmailJS form
+		(function initEmailForm() {
+
+			console.log('Inicializando EmailJS...');
+
+			if (typeof emailjs === 'undefined') {
+				console.error('EmailJS não foi carregado.');
+				return;
+			}
+
+			emailjs.init("dlY8ZFVmeC6kyqwcp");
+
+			const form = document.getElementById('contact-form');
+
+			if (!form) {
+				console.error('Formulário #contact-form não encontrado.');
+				return;
+			}
+
+			console.log('Formulário encontrado.');
+
+			const nameInput = document.getElementById('name');
+			const emailInput = document.getElementById('email');
+			const phoneInput = document.getElementById('phone');
+			const messageInput = document.getElementById('message');
+			const submitButton = document.getElementById('btn-submit');
+			const status = document.getElementById('form-status');
+
+
+			// =========================
+			// Formatação do telefone
+			// =========================
+
+			phoneInput.addEventListener('input', function() {
+
+				let value = this.value.replace(/\D/g, '');
+
+				// Limita a 11 números
+				value = value.substring(0, 11);
+
+				if (value.length <= 10) {
+
+					// (XX) XXXX-XXXX
+					value = value.replace(
+						/^(\d{2})(\d{4})(\d{0,4}).*/,
+						'($1) $2-$3'
+					);
+
+				} else {
+
+					// (XX) XXXXX-XXXX
+					value = value.replace(
+						/^(\d{2})(\d{5})(\d{0,4}).*/,
+						'($1) $2-$3'
+					);
+				}
+
+				this.value = value;
+			});
+
+
+			// =========================
+			// Funções de validação
+			// =========================
+
+			function showError(message) {
+
+				status.textContent = message;
+				status.classList.add('error');
+
+			}
+
+
+			function clearStatus() {
+
+				status.textContent = '';
+				status.classList.remove('error');
+				status.classList.remove('success');
+
+			}
+
+
+			function validateEmail(email) {
+
+				return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+
+			}
+
+
+			function validatePhone(phone) {
+
+				const numbers = phone.replace(/\D/g, '');
+
+				// Aceita:
+				// 10 dígitos: (XX) XXXX-XXXX
+				// 11 dígitos: (XX) XXXXX-XXXX
+
+				return numbers.length === 10 || numbers.length === 11;
+
+			}
+
+
+			// =========================
+			// Envio do formulário
+			// =========================
+
+			form.addEventListener('submit', function(event) {
+
+				event.preventDefault();
+
+				clearStatus();
+
+				const name = nameInput.value.trim();
+				const email = emailInput.value.trim();
+				const phone = phoneInput.value.trim();
+				const message = messageInput.value.trim();
+
+
+				// Nome
+				if (name.length < 3) {
+
+					showError('Por favor, informe seu nome completo.');
+
+					nameInput.focus();
+
+					return;
+				}
+
+
+				// E-mail
+				if (!validateEmail(email)) {
+
+					showError('Por favor, informe um e-mail válido. Exemplo: nome@exemplo.com');
+
+					emailInput.focus();
+
+					return;
+				}
+
+
+				// Telefone
+				if (!validatePhone(phone)) {
+
+					showError('Por favor, informe um telefone válido com DDD (somente números).');
+
+					phoneInput.focus();
+
+					return;
+				}
+
+
+				// Mensagem
+				if (message.length < 10) {
+
+					showError('Por favor, escreva uma mensagem com pelo menos 10 caracteres.');
+
+					messageInput.focus();
+
+					return;
+				}
+
+
+				// =========================
+				// Enviando
+				// =========================
+
+				submitButton.disabled = true;
+				submitButton.value = 'Enviando...';
+
+				console.log('Enviando formulário...');
+
+				console.log('Nome:', name);
+				console.log('Email:', email);
+				console.log('Telefone:', phone);
+				console.log('Mensagem:', message);
+
+				console.log('Dados enviados pelo formulário:');
+
+				const formData = new FormData(form);
+
+				for (const [key, value] of formData.entries()) {
+					console.log(key, ':', value);
+				}
+
+				emailjs.sendForm(
+					'service_samira',
+					'template_samira',
+					form
+				)
+				.then(function(response) {
+
+					console.log(
+						'E-mail enviado:',
+						response.status,
+						response.text
+					);
+
+					status.textContent =
+						'Mensagem enviada com sucesso! Retornarei em breve.';
+
+					status.classList.add('success');
+
+					form.reset();
+
+				})
+				.catch(function(error) {
+
+					console.error('Erro ao enviar:', error);
+
+					showError(
+						'Não foi possível enviar sua mensagem. Tente novamente.'
+					);
+
+				})
+				.finally(function() {
+
+					submitButton.disabled = false;
+					submitButton.value = 'Enviar';
+
+				});
+
+			});
+
+		}());
+
 	});
 
 }());
