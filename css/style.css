@@ -559,14 +559,14 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   background: rgba(230, 225, 215, 0.95);
-  opacity: 0.0;
+  opacity: 0;
   padding: 30px;
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
 }
 .fh5co-portfolio .portfolio-entry .desc p {
-  color: #8f989f;
+  color: #242424;
 }
 .fh5co-portfolio .portfolio-text {
   width: 100%;
