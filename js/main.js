@@ -196,7 +196,7 @@
 				return;
 			}
 
-			emailjs.init("dlY8ZFVmeC6kyqwcp");
+			emailjs.init("REqURCQBhwAuu6rRf");
 
 			const form = document.getElementById('contact-form');
 
